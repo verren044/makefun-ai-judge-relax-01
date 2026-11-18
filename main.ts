@@ -10,14 +10,12 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const TEXT = [
-  'The lamp turns once, and the dark gives way, and turns again.',
-  'Moths circle the glass in slow loops.',
-  'Below it the keeper pours tea the colour of honey and sets the cup down to cool.',
-  'The gulls have gone home.',
-  'The sea keeps its own time against the rocks, in and out, in and out, and there is nowhere else the night needs him to be.',
-  'He listens to the lamp\u2019s slow circle and does not hurry it.',
-  'Morning is a long way off, and it will come on its own.',
-].join('\n');
+const TEXT = `The gardener waters the beds after dark, moving slow between the rows.
+Fireflies stitch the air above the mint, and the crickets keep their low count.
+The soil drinks, and the smell of wet earth rises, cool and dark.
+Somewhere a gate creaks, and settles, and does not creak again.
+The moon lays a thin light on the leaves, and the leaves do not hurry to take it.
+He sets the can down by the wall, and listens to the water finding its level.
+There is nowhere else tonight, and the night is in no hurry either.`;
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), TEXT, 'utf8');
